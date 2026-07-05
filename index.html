@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayanti Associates | Architects & Interior Designers</title>
+<meta name="description" content="Jayanti Associates - Architectural Solutions & Interior Design Studio. Crafting tailor-made designs with top architects, designers and execution teams under one roof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f7f5f1;
+    --cream-2:#efece4;
+    --ink:#1c2b2a;
+    --navy:#16242b;
+    --gold:#a9824c;
+    --gold-light:#c9a36a;
+    --line:#d8d3c6;
+    --white:#ffffff;
+    --text-soft:#5b5e57;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Jost', sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    color:var(--ink);
+  }
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 30px;
+  }
+  ul{list-style:none;}
+
+  /* ===== TOP BAR ===== */
+  .topbar{
+    background:var(--navy);
+    color:#cfd6d4;
+    font-size:13px;
+    letter-spacing:.03em;
+  }
+  .topbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:9px 30px;
+  }
+  .topbar .tagline{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    opacity:.9;
+  }
+  .topbar .right{
+    display:flex;
+    align-items:center;
+    gap:22px;
+  }
+  .topbar .phone{
+    color:var(--gold-light);
+    font-weight:500;
+  }
+  .topbar .socials{
+    display:flex;
+    gap:14px;
+  }
+  .topbar .socials a{
+    width:26px;height:26px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;
+    transition:.25s;
+  }
+  .topbar .socials a:hover{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--navy);
+  }
+
+  /* ===== HEADER / NAV ===== */
+  header.main{
+    background:var(--cream);
+    border-bottom:1px solid var(--line);
+    position:sticky;
+    top:0;
+    z-index:500;
+  }
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 30px;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .logo-mark{
+    width:46px;height:46px;
+    border:2px solid var(--gold);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:700;
+    font-size:20px;
+    color:var(--gold);
+  }
+  .logo-text{
+    font-family:'Cormorant Garamond', serif;
+  }
+  .logo-text .name{
+    font-size:23px;
+    font-weight:700;
+    letter-spacing:.03em;
+    line-height:1;
+    color:var(--ink);
+  }
+  .logo-text .sub{
+    font-family:'Jost',sans-serif;
+    font-size:10.5px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--text-soft);
+  }
+  nav.links{
+    display:flex;
+    align-items:center;
+    gap:34px;
+  }
+  nav.links a{
+    font-size:13.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink);
+    font-weight:500;
+    position:relative;
+    padding:6px 0;
+  }
+  nav.links a::after{
+    content:'';
+    position:absolute;
+    left:0;bottom:0;
+    width:0;height:1.5px;
+    background:var(--gold);
+    transition:.3s;
+  }
+  nav.links a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--ink);
+    color:var(--cream)!important;
+    padding:12px 26px;
+    font-size:13px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    border-radius:2px;
+    transition:.3s;
+  }
+  .nav-cta:hover{background:var(--gold);color:var(--navy)!important;}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+  .burger span{width:26px;height:2px;background:var(--ink);}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    display:flex;
+    align-items:center;
+    min-height:88vh;
+    background:var(--cream);
+    overflow:hidden;
+  }
+  .hero .container{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:50px;
+    align-items:center;
+    width:100%;
+  }
+  .hero-eyebrow{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:22px;
+  }
+  .hero-eyebrow .dash{
+    width:38px;height:1px;
+    background:var(--gold);
+  }
+  .hero-eyebrow span{
+    font-size:12.5px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .hero h1{
+    font-size:clamp(40px, 6vw, 68px);
+    line-height:1.05;
+    margin-bottom:22px;
+    color:var(--ink);
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold);
+  }
+  .hero p.lead{
+    font-size:16px;
+    line-height:1.8;
+    color:var(--text-soft);
+    max-width:480px;
+    margin-bottom:30px;
+  }
+  .hero-btns{
+    display:flex;
+    gap:18px;
+    margin-bottom:46px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:15px 32px;
+    font-size:13px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    font-weight:500;
+    border-radius:2px;
+    transition:.3s;
+  }
+  .btn-dark{
+    background:var(--ink);
+    color:var(--cream);
+  }
+  .btn-dark:hover{background:var(--gold);color:var(--navy);}
+  .btn-outline{
+    border:1px solid var(--ink);
+    color:var(--ink);
+  }
+  .btn-outline:hover{background:var(--ink);color:var(--cream);}
+  .hero-founder{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    border-top:1px solid var(--line);
+    padding-top:24px;
+    max-width:420px;
+  }
+  .founder-sig{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:26px;
+    color:var(--gold);
+    border-right:1px solid var(--line);
+    padding-right:18px;
+  }
+  .founder-info .fname{
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .founder-info .frole{
+    font-size:12px;
+    letter-spacing:.05em;
+    color:var(--text-soft);
+    text-transform:uppercase;
+  }
+  .hero-img-wrap{
+    position:relative;
+  }
+  .hero-img-wrap img{
+    width:100%;
+    height:700px;
+    object-fit:cover;
+    border-radius:2px;
+  }
+  .hero-badge{
+    position:absolute;
+    bottom:-26px;
+    left:-30px;
+    background:var(--navy);
+    color:var(--cream);
+    padding:22px 26px;
+    max-width:230px;
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+  }
+  .hero-badge .num{
+    font-family:'Cormorant Garamond',serif;
+    font-size:38px;
+    color:var(--gold-light);
+    font-weight:700;
+    line-height:1;
+  }
+  .hero-badge .label{
+    font-size:11.5px;
+    letter-spacing:.05em;
+    color:#cfd6d4;
+    margin-top:6px;
+    line-height:1.4;
+  }
+
+  /* ===== SECTION COMMON ===== */
+  section{
+    padding:110px 0;
+  }
+  .sec-head{
+    text-align:center;
+    max-width:680px;
+    margin:0 auto 60px;
+  }
+  .sec-eyebrow{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:16px;
+  }
+  .sec-eyebrow .dash{width:30px;height:1px;background:var(--gold);}
+  .sec-eyebrow span{
+    font-size:12px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .sec-head h2{
+    font-size:clamp(30px,4vw,44px);
+    margin-bottom:16px;
+  }
+  .sec-head p{
+    font-size:15.5px;
+    line-height:1.8;
+    color:var(--text-soft);
+  }
+
+  /* ===== INTRO / ABOUT BAND ===== */
+  .intro-band{
+    background:var(--cream-2);
+  }
+  .intro-grid{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:60px;
+    align-items:center;
+  }
+  .intro-grid img{
+    border-radius:2px;
+    height:420px;
+    object-fit:cover;
+  }
+  .intro-text h3{
+    font-size:30px;
+    margin-bottom:18px;
+  }
+  .intro-text p{
+    color:var(--text-soft);
+    line-height:1.85;
+    margin-bottom:16px;
+    font-size:15px;
+  }
+  .since-tag{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:.18em;
+    color:var(--gold);
+    border:1px solid var(--gold);
+    padding:6px 16px;
+    margin-bottom:20px;
+    border-radius:20px;
+  }
+
+  /* ===== SERVICES ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+  }
+  .service-card{
+    position:relative;
+    height:430px;
+    border-radius:2px;
+    overflow:hidden;
+    cursor:default;
+  }
+  .service-card img{
+    position:absolute;
+    inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .service-card:hover img{transform:scale(1.08);}
+  .service-card::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(22,36,43,0.05) 0%, rgba(22,36,43,0.92) 88%);
+  }
+  .service-content{
+    position:absolute;
+    bottom:0;left:0;right:0;
+    padding:28px 24px;
+    color:var(--cream);
+    z-index:2;
+  }
+  .service-content .stag{
+    font-size:11px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--gold-light);
+    margin-bottom:10px;
+    display:block;
+  }
+  .service-content h4{
+    font-size:24px;
+    color:var(--cream);
+    line-height:1.2;
+    margin-bottom:12px;
+  }
+  .service-content p{
+    font-size:13px;
+    line-height:1.6;
+    color:#d8dcda;
+    max-width:230px;
+    margin-bottom:14px;
+  }
+  .service-content a{
+    font-size:11.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--cream);
+    border-bottom:1px solid var(--gold);
+    padding-bottom:4px;
+  }
+
+  /* ===== STATS STRIP ===== */
+  .stats-strip{
+    background:var(--navy);
+    padding:60px 0;
+  }
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    color:var(--cream);
+  }
+  .stats-grid .stat{
+    border-right:1px solid rgba(255,255,255,.12);
+    padding:0 20px;
+  }
+  .stats-grid .stat:last-child{border-right:none;}
+  .stats-grid .num{
+    font-family:'Cormorant Garamond',serif;
+    font-size:46px;
+    font-weight:700;
+    color:var(--gold-light);
+    line-height:1;
+    margin-bottom:8px;
+  }
+  .stats-grid .label{
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#cfd6d4;
+  }
+<section id="trust">
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>Our Strength</span>
+</div>
+
+<h2>Why Clients Trust Jayanti Associates</h2>
+
+<p>
+Delivering architecture and interior solutions with a focus on creativity, transparency and quality execution.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>Customized Design</h3>
+<p>Every project is uniquely designed according to client needs.</p>
+</div>
+
+<div class="why-card">
+<h3>Transparent Process</h3>
+<p>Clear communication from concept to completion.</p>
+</div>
+
+<div class="why-card">
+<h3>Turnkey Execution</h3>
+<p>Design and execution handled under one roof.</p>
+</div>
+
+<div class="why-card">
+<h3>Quality Assurance</h3>
+<p>Attention to detail and premium project delivery.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+  /* ===== PROJECTS ===== */
+  .projects-tabs{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:46px;
+    flex-wrap:wrap;
+  }
+  .projects-tabs button{
+    background:none;
+    border:1px solid var(--line);
+    padding:10px 22px;
+    font-family:'Jost',sans-serif;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-soft);
+    border-radius:20px;
+    cursor:pointer;
+    transition:.25s;
+  }
+  .projects-tabs button.active,
+  .projects-tabs button:hover{
+    background:var(--ink);
+    border-color:var(--ink);
+    color:var(--cream);
+  }
+  .projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+  }
+  .project-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:2px;
+    height:320px;
+    cursor:pointer;
+  }
+  .project-card img{
+    width:100%;height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .project-card:hover img{transform:scale(1.06);}
+  .project-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, transparent 50%, rgba(20,30,28,.88) 100%);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:22px;
+    color:var(--cream);
+  }
+  .project-overlay .ptag{
+    font-size:10.5px;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--gold-light);
+    margin-bottom:6px;
+  }
+  .project-overlay h5{
+    font-size:20px;
+    color:var(--cream);
+  }
+
+  /* ===== QUOTE BAND ===== */
+  .quote-band{
+    background:var(--ink);
+    color:var(--cream);
+    text-align:center;
+  }
+  .quote-band blockquote{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:clamp(24px,3.4vw,38px);
+    line-height:1.5;
+    max-width:850px;
+    margin:0 auto 26px;
+  }
+  .quote-band .qname{
+    font-size:14px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--gold-light);
+  }
+
+  /* ===== CLIENTS ===== */
+  .clients-strip{
+    background:var(--cream-2);
+    padding:60px 0;
+    overflow:hidden;
+  }
+  .clients-strip .sec-head{margin-bottom:40px;}
+  .clients-track{
+    display:flex;
+    gap:50px;
+    align-items:center;
+    animation:scroll 28s linear infinite;
+    width:max-content;
+  }
+  @keyframes scroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .client-logo{
+    width:130px;height:80px;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+    font-size:14px;
+    color:var(--text-soft);
+    flex-shrink:0;
+    text-align:center;
+    padding:10px;
+  }
+
+  /* ===== CONTACT CTA ===== */
+  .contact-cta{
+    background:linear-gradient(135deg, var(--navy), #1d3038);
+    color:var(--cream);
+  }
+  .cta-grid{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:50px;
+    align-items:center;
+  }
+  .cta-grid h2{
+    color:var(--cream);
+    font-size:clamp(28px,4vw,42px);
+    margin-bottom:18px;
+  }
+  .cta-grid p{
+    color:#cfd6d4;
+    line-height:1.8;
+    font-size:15px;
+    margin-bottom:30px;
+    max-width:480px;
+  }
+  .cta-info-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:4px;
+    padding:38px;
+  }
+  .cta-info-card .row{
+    display:flex;
+    gap:16px;
+    margin-bottom:22px;
+    align-items:flex-start;
+  }
+  .cta-info-card .row:last-child{margin-bottom:0;}
+  .cta-info-card .ic{
+    width:38px;height:38px;
+    border:1px solid var(--gold);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold-light);
+    flex-shrink:0;
+    font-size:15px;
+  }
+  .cta-info-card .row strong{
+    display:block;
+    font-size:13px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--gold-light);
+    margin-bottom:4px;
+  }
+  .cta-info-card .row span{
+    font-size:14.5px;
+    color:#e4e7e5;
+    line-height:1.6;
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:#0f1c20;
+    color:#9ba8a5;
+    padding:80px 0 0;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+    gap:40px;
+    padding-bottom:60px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .footer-grid h5{
+    font-family:'Jost',sans-serif;
+    font-size:13px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--cream);
+    margin-bottom:22px;
+  }
+  .footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+  }
+  .footer-logo .logo-mark{border-color:var(--gold-light);color:var(--gold-light);}
+  .footer-logo .name{color:var(--cream);font-size:21px;font-family:'Cormorant Garamond',serif;font-weight:700;}
+  .footer-about p{
+    font-size:14px;
+    line-height:1.8;
+    color:#92a09d;
+    margin-bottom:20px;
+  }
+  .footer-socials{display:flex;gap:10px;}
+  .footer-socials a{
+    width:34px;height:34px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;
+    color:#cfd6d4;
+    transition:.25s;
+  }
+  .footer-socials a:hover{background:var(--gold);border-color:var(--gold);color:var(--navy);}
+  .footer-links li{margin-bottom:13px;}
+  .footer-links a{
+    font-size:14px;
+    color:#9ba8a5;
+    transition:.2s;
+  }
+  .footer-links a:hover{color:var(--gold-light);padding-left:4px;}
+  .footer-contact li{
+    display:flex;
+    gap:10px;
+    margin-bottom:16px;
+    font-size:13.5px;
+    line-height:1.6;
+    color:#9ba8a5;
+  }
+  .footer-contact li b{color:var(--gold-light);font-weight:600;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:26px 0;
+    font-size:13px;
+    color:#6f7d7a;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .footer-bottom a{color:var(--gold-light);}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:1024px){
+    .hero .container{grid-template-columns:1fr;}
+    .hero-img-wrap{order:-1;}
+    .hero-img-wrap img{height:380px;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .projects-grid{grid-template-columns:repeat(2,1fr);}
+    .intro-grid{grid-template-columns:1fr;}
+    .intro-grid img{height:320px;}
+    .cta-grid{grid-template-columns:1fr;}
+    .stats-grid{grid-template-columns:repeat(2,1fr);gap:30px 0;}
+    .stats-grid .stat:nth-child(2){border-right:none;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .process-grid{
+grid-template-columns:repeat(2,1fr);
+}
+  }
+  @media (max-width:760px){
+    .topbar .tagline{display:none;}
+    nav.links{
+      position:fixed;
+      top:0;right:-100%;
+      height:100vh;
+      width:78%;
+      background:var(--cream);
+      flex-direction:column;
+      justify-content:center;
+      gap:30px;
+      transition:.4s;
+      box-shadow:-10px 0 40px rgba(0,0,0,.15);
+    }
+      .founders-grid{
+grid-template-columns:1fr;
+}
+      .testimonial-grid{
+grid-template-columns:1fr;
+}
+      .process-grid{
+grid-template-columns:1fr;
+}
+    }
+    nav.links.open{right:0;}
+    .nav-cta{display:none;}
+    .burger{display:flex;}
+    .services-grid{grid-template-columns:1fr;}
+    .projects-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    .hero-badge{position:static;margin-top:20px;max-width:100%;}
+    section{padding:70px 0;}
+  
+  .why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.why-card{
+background:white;
+padding:35px;
+border:1px solid var(--line);
+text-align:center;
+transition:.3s;
+}
+
+.why-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+#founders{
+background:white;
+}
+
+.founders-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+}
+
+.founder-card{
+background:white;
+padding:30px;
+border:1px solid var(--line);
+text-align:center;
+transition:.3s;
+}
+
+.founder-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.founder-card img{
+width:100%;
+height:450px;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.role{
+color:var(--gold);
+font-weight:600;
+margin:10px 0;
+}
+#process{
+background:var(--cream-2);
+}
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.process-card{
+background:white;
+padding:35px;
+border:1px solid var(--line);
+transition:.3s;
+}
+
+.process-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.step-number{
+font-size:40px;
+font-weight:700;
+color:var(--gold);
+margin-bottom:15px;
+font-family:'Cormorant Garamond', serif;
+}
+
+.process-card h3{
+margin-bottom:12px;
+font-size:24px;
+}
+
+.process-card p{
+line-height:1.8;
+color:var(--text-soft);
+}
+#testimonials{
+background:var(--cream-2);
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.testimonial-card{
+background:white;
+padding:35px;
+border:1px solid var(--line);
+transition:.3s;
+}
+
+.testimonial-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.stars{
+font-size:22px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.testimonial-card p{
+line-height:1.8;
+margin-bottom:15px;
+color:var(--text-soft);
+}
+
+.testimonial-card h4{
+font-size:18px;
+}
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:550px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+padding:15px;
+border:none;
+outline:none;
+font-family:'Jost',sans-serif;
+}
+
+.contact-form textarea{
+height:120px;
+resize:none;
+}
+
+.contact-form button{
+background:var(--gold);
+border:none;
+padding:16px;
+cursor:pointer;
+font-weight:600;
+letter-spacing:.08em;
+text-transform:uppercase;
+}
+#faq{
+background:white;
+}
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:var(--cream);
+padding:25px;
+margin-bottom:15px;
+border-left:4px solid var(--gold);
+}
+
+.faq-item h3{
+margin-bottom:10px;
+font-size:22px;
+}
+
+.faq-item p{
+line-height:1.8;
+color:var(--text-soft);
+}
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+z-index:9999;
+transition:.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+#location{
+background:var(--cream-2);
+}
+
+.map-container{
+overflow:hidden;
+border-radius:8px;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+.final-cta{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:100px 0;
+}
+
+.final-cta h2{
+color:white;
+font-size:48px;
+margin-bottom:20px;
+}
+
+.final-cta p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+margin-bottom:30px;
+color:#cfd6d4;
+}
+.hero-highlights{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:30px;
+max-width:500px;
+}
+
+.hero-highlights div{
+background:white;
+padding:12px 18px;
+border:1px solid var(--line);
+font-size:14px;
+font-weight:500;
+}
+#founders{
+background:white;
+}
+
+.founders-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:50px;
+}
+
+.founder-card{
+background:white;
+padding:25px;
+border:1px solid var(--line);
+text-align:center;
+transition:.3s;
+}
+
+.founder-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
+
+.founder-card img{
+width:100%;
+height:500px;
+object-fit:cover;
+margin-bottom:25px;
+border-radius:4px;
+}
+
+.founder-card h3{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.founder-role{
+color:var(--gold);
+font-weight:600;
+letter-spacing:.08em;
+text-transform:uppercase;
+margin-bottom:15px;
+}
+
+.founder-card p{
+line-height:1.8;
+color:var(--text-soft);
+}
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:all .8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+/* ===== PROJECT LIGHTBOX ===== */
+
+.lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.92);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:99999;
+padding:40px;
+}
+
+.lightbox.active{
+display:flex;
+animation:fadeIn .3s ease;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:8px;
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.close-lightbox{
+position:absolute;
+top:25px;
+right:40px;
+font-size:50px;
+color:white;
+cursor:pointer;
+font-weight:300;
+transition:.3s;
+}
+
+.close-lightbox:hover{
+color:#c9a36a;
+transform:rotate(90deg);
+}
+
+.project-popup{
+display:block;
+height:100%;
+}
+
+.project-popup img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="tagline">Crafted with Precision &middot; Built on Trust</div>
+    <div class="right">
+      <a class="phone" href="tel:+919876543210">Get in Touch @ +91 88376 78165</a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="main">
+  <div class="nav-wrap">
+    <a href="#" class="logo">
+      <div class="logo-mark">JA</div>
+      <div class="logo-text">
+        <div class="name">Jayanti Associates</div>
+        <div class="sub">Architects &amp; Interior Designers</div>
+      </div>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#founders">Founders</a>
+      <a href="#contact" class="nav-cta">Get A Quote</a>
+    </nav>
+    <div class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-copy">
+      <div class="hero-eyebrow"><div class="dash"></div><span>Since 2009</span></div>
+      <h1>
+
+Designing
+<em>Extraordinary Spaces</em>
+
+That Inspire Generations
+
+</h1>
+      <p class="lead">
+
+Jayanti Associates is a multidisciplinary architecture and interior design firm led by Ar. Chitwan Bamotra and Ar. Srishti Bamotra, delivering residential, commercial and turnkey projects across Punjab.
+
+</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-dark">More About Us</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+      <div class="hero-highlights">
+
+<div>
+✓ Residential Projects
+</div>
+
+<div>
+✓ Commercial Projects
+</div>
+
+<div>
+✓ Turnkey Solutions
+</div>
+
+<div>
+✓ Interior Design
+</div>
+
+</div>
+     <div class="hero-founder">
+  <div class="founder-sig">JA.</div>
+
+  <div class="founder-info">
+    <div class="fname">
+      Ar. Chitwan Bamotra & Ar. Srishti Bamotra
+    </div>
+
+    <div class="frole">
+      Co-Founders & Principal Architects
+    </div>
+  </div>
+</div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop" alt="Jayanti Associates - Architecture & Interior Design">
+      <div class="hero-badge">
+        <div class="num">15+</div>
+        <div class="label">Years of Design Excellence Across India</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / INTRO -->
+<section class="intro-band" id="about">
+  <div class="container intro-grid">
+    <img src="https://images.unsplash.com/photo-1556156653-e5a7c69cc4cb?q=80&w=800&auto=format&fit=crop" alt="Jayanti Associates Studio">
+    <div class="intro-text">
+      <span class="since-tag">Estd. 2009</span>
+      <h3>Architectural Solutions &amp; Interior Design Studio</h3>
+      <p>
+Jayanti Associates is a multidisciplinary architecture and interior design firm led by Ar. Chitwan Bamotra and Ar. Srishti Bamotra. The firm specializes in residential, commercial, interior and turnkey projects, delivering innovative design solutions with a strong focus on functionality, aesthetics and client satisfaction.
+</p>
+      <p>We manage interior design-build for offices, fit-outs, retail spaces, apartments, villas, sample flats and clubhouses. Our design/build service eliminates the client's burden of coordinating between different stakeholders — delivering affordable, yet contemporary designs from scratch, with a true turn-key approach.</p>
+      <a href="#projects" class="btn btn-dark">Take A Tour</a>
+    </div>
+  </div>
+</section>
+<section id="why-us" class="reveal">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow">
+        <div class="dash"></div>
+        <span>Why Choose Us</span>
+      </div>
+
+      <h2>Creating Spaces That Inspire</h2>
+
+      <p>
+        At Jayanti Associates, we combine architectural creativity,
+        technical expertise and practical execution to deliver
+        outstanding projects tailored to our clients.
+      </p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>15+ Years Experience</h3>
+        <p>Delivering residential, commercial and interior projects.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Turnkey Solutions</h3>
+        <p>From concept design to final execution under one roof.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Modern Design Approach</h3>
+        <p>Functional, sustainable and aesthetically pleasing spaces.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Dedicated Support</h3>
+        <p>Transparent communication throughout the project lifecycle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="founders" class="reveal">
+
+
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>Leadership</span>
+</div>
+
+<h2>Meet The Founders</h2>
+
+<p>
+Jayanti Associates is led by two passionate architects dedicated to creating functional, timeless and innovative spaces.
+</p>
+
+</div>
+
+<div class="founders-grid">
+
+<div class="founder-card">
+
+<img src="images/chitwan.jpeg" alt="Ar. Chitwan Bamotra">
+
+<h3>Ar. Chitwan Bamotra</h3>
+
+<div class="founder-role">
+Co-Founder & Principal Architect
+</div>
+
+<p>
+Bachelor of Architecture (B.Arch)
+<br>
+Chitkara University
+</p>
+
+</div>
+
+<div class="founder-card">
+
+<img src="images/srishti.jpeg" alt="Ar. Srishti Bamotra">
+
+<h3>Ar. Srishti Bamotra</h3>
+
+<div class="founder-role">
+Co-Founder & Principal Architect
+</div>
+
+<p>
+Architect & Interior Design Specialist
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><div class="dash"></div><span>What We Do</span></div>
+      <h2>Services Offered</h2>
+      <p>Bespoke contemporary architecture, interiors &amp; products to create designs that aid society, advance modern technology, sustain the environment &amp; inspire those around us.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=700&auto=format&fit=crop" alt="Interior Designing Studio">
+        <div class="service-content">
+          <span class="stag">Jayanti Design Studio</span>
+          <h4>Interior Designing Studio</h4>
+          <p>Using nonconforming, original creativity to transform brands and spaces with intelligent, multi-sensory design.</p>
+          <a href="#contact">Know More</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=700&auto=format&fit=crop" alt="Construction & Project Management">
+        <div class="service-content">
+          <span class="stag">Jayanti Revamp Studio</span>
+          <h4>Construction &amp; Project Management</h4>
+          <p>Setting new standards in civil construction and project management, blending creativity, efficiency &amp; excellence.</p>
+          <a href="#contact">Know More</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=700&auto=format&fit=crop" alt="Build & Turnkey Projects">
+        <div class="service-content">
+          <span class="stag">Jayanti Architects</span>
+          <h4>Build &amp; Turnkey Projects</h4>
+          <p>Igniting the realms of possibility — extraordinary build and turnkey projects that push the boundaries of innovation.</p>
+          <a href="#contact">Know More</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=700&auto=format&fit=crop" alt="Architectural Consultants">
+        <div class="service-content">
+          <span class="stag">Jayanti Consultants</span>
+          <h4>Architectural Consultants</h4>
+          <p>Architectural consulting services, from the most basic to the wildly complex — transforming vision into reality.</p>
+          <a href="#contact">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<section id="process" class="reveal">
+
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>How We Work</span>
+</div>
+
+<h2>Our Design Process</h2>
+
+<p>
+A structured workflow that ensures transparency, quality and timely project delivery.
+</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+<div class="step-number">01</div>
+<h3>Consultation</h3>
+<p>Understanding client requirements and project goals.</p>
+</div>
+
+<div class="process-card">
+<div class="step-number">02</div>
+<h3>Site Visit</h3>
+<p>Detailed site analysis and feasibility assessment.</p>
+</div>
+
+<div class="process-card">
+<div class="step-number">03</div>
+<h3>Concept Design</h3>
+<p>Planning layouts and architectural concepts.</p>
+</div>
+
+<div class="process-card">
+<div class="step-number">04</div>
+<h3>3D Visualization</h3>
+<p>Realistic design presentation and approvals.</p>
+</div>
+
+<div class="process-card">
+<div class="step-number">05</div>
+<h3>Working Drawings</h3>
+<p>Technical drawings and execution planning.</p>
+</div>
+
+<div class="process-card">
+<div class="step-number">06</div>
+<h3>Execution</h3>
+<p>Construction supervision and project delivery.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+<div class="stats-strip"></section>
+</section>
+
+<!-- STATS -->
+
+
+<!-- DESIGN PROCESS HERE -->
+
+<!-- STATS -->
+
+<!-- STATS -->
+
+  <div class="container stats-grid">
+
+    <div class="stat">
+      <div class="num" id="years">0</div>
+      <div class="label">Years of Experience</div>
+    </div>
+
+    <div class="stat">
+      <div class="num" id="projects">0</div>
+      <div class="label">Projects Completed</div>
+    </div>
+
+    <div class="stat">
+      <div class="num" id="team">0</div>
+      <div class="label">Design Professionals</div>
+    </div>
+
+    <div class="stat">
+      <div class="num" id="satisfaction">0</div>
+      <div class="label">Client Satisfaction</div>
+    </div>
+
+  </div>
+</div>
+<!-- PROJECTS -->
+
+<section id="projects" class="reveal">
+
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><div class="dash"></div><span>Our Work</span></div>
+      <h2>Our Recent Projects</h2>
+      <p>Inspired by elegance &amp; culture, Jayanti Associates is the interior design equivalent of a bespoke tailor — translating clients' briefs into bespoke interiors.</p>
+    </div>
+   
+ <div class="project-card">
+
+    <a href="images/project1.png" class="project-popup">
+
+        <img src="images/project1.png" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Modern Residence</span>
+            <h5>Contemporary Luxury Home</h5>
+        </div>
+
+    </a>
+
+</div>
+<div class="project-card">
+
+    <a href="images/project2.png" class="project-popup">
+
+        <img src="images/project2.png" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Residential</span>
+            <h5>Premium Villa Elevation</h5>
+        </div>
+
+    </a>
+
+</div>
+<div class="project-card">
+
+    <a href="images/project3.png" class="project-popup">
+
+        <img src="images/project3.png" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Residence</span>
+            <h5>Elegant Modern Elevation</h5>
+        </div>
+
+    </a>
+
+</div>
+<div class="project-card">
+
+    <a href="images/project4.png" class="project-popup">
+
+        <img src="images/project4.png" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Residence</span>
+            <h5>Minimal Contemporary House</h5>
+        </div>
+
+    </a>
+
+</div>
+<div class="project-card">
+
+    <a href="images/project5.jpeg" class="project-popup">
+
+        <img src="images/project5.jpeg" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Residence</span>
+            <h5>Classic Premium Residence</h5>
+        </div>
+
+    </a>
+
+</div>
+<div class="project-card">
+
+    <a href="images/project6.jpeg" class="project-popup">
+
+        <img src="images/project6.jpeg" alt="Modern Residence">
+
+        <div class="project-overlay">
+            <span class="ptag">Modern Residence</span>
+            <h5>Signature Elevation Design</h5>
+        </div>
+
+    </a>
+
+</div>
+</section>
+
+<!-- QUOTE -->
+<div class="quote-band">
+  <div class="container">
+    <blockquote>"With precision, professionalism, attention to detail and exceptional customer service — Jayanti Associates is committed to the highest level of design with a true turn-key approach."</blockquote>
+    <div class="qname">
+— Ar. Chitwan Bamotra & Ar. Srishti Bamotra
+</div>
+  </div>
+</div>
+
+<!-- CLIENTS -->
+<div class="clients-strip">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-eyebrow"><div class="dash"></div><span>Trusted By</span></div>
+      <h2>Our Prestigious Clients</h2>
+    </div>
+  </div>
+  <div class="clients-track" id="clientsTrack">
+    <div class="client-logo">Orbit Retail</div>
+    <div class="client-logo">Meridian Group</div>
+    <div class="client-logo">Casa Living</div>
+    <div class="client-logo">Verandah Cafe</div>
+    <div class="client-logo">Anand Industries</div>
+    <div class="client-logo">SBP Realty</div>
+    <div class="client-logo">VRS Group</div>
+    <div class="client-logo">Maple Developers</div>
+    <div class="client-logo">Orbit Retail</div>
+    <div class="client-logo">Meridian Group</div>
+    <div class="client-logo">Casa Living</div>
+    <div class="client-logo">Verandah Cafe</div>
+    <div class="client-logo">Anand Industries</div>
+    <div class="client-logo">SBP Realty</div>
+    <div class="client-logo">VRS Group</div>
+    <div class="client-logo">Maple Developers</div>
+  </div>
+</div>
+<!-- TESTIMONIALS HERE -->
+<section id="testimonials" class="reveal">
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>Testimonials</span>
+</div>
+
+<h2>What Our Clients Say</h2>
+
+<p>
+Trusted by homeowners, businesses and developers for thoughtful architecture and seamless execution.
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+The team delivered exactly what we envisioned. The design process was smooth and highly professional.
+</p>
+
+<h4>Residential Client</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+Exceptional attention to detail and excellent project management from start to finish.
+</p>
+
+<h4>Commercial Client</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="stars">★★★★★</div>
+
+<p>
+Creative design solutions combined with practical execution. Highly recommended.
+</p>
+
+<h4>Interior Design Client</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="faq" class="reveal">
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>FAQ</span>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<p>
+Answers to common questions about our architecture and interior design services.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<h3>Do you provide turnkey services?</h3>
+<p>Yes, we offer complete design and execution solutions under one roof.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you work outside Mohali?</h3>
+<p>Yes, we undertake projects across Punjab and nearby regions.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide 3D designs?</h3>
+<p>Yes, realistic 3D visualizations are provided before execution.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can you help with approvals and drawings?</h3>
+<p>Yes, we provide architectural drawings and project documentation.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- CONTACT CTA -->
+<section class="contact-cta" id="contact">
+  <div class="container cta-grid">
+    <div>
+      <div class="sec-eyebrow"><div class="dash"></div><span>Get In Touch</span></div>
+    
+
+<h2>Request a Free Consultation</h2>
+
+<p>
+Share your project details and our team will get back to you within 24 hours.
+</p>
+
+<form class="contact-form">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+placeholder="Project Location">
+
+<select>
+
+<option>
+Residential Project
+</option>
+
+<option>
+Commercial Project
+</option>
+
+<option>
+Interior Design
+</option>
+
+<option>
+Turnkey Project
+</option>
+
+</select>
+
+<textarea
+placeholder="Tell us about your project">
+</textarea>
+
+<button type="submit">
+Request Consultation
+</button>
+
+</form>
+
+      <p>Leave your information here &amp; get a reply from our experts within 24 hours. Don't hesitate to ask — our team is ready to bring your vision to life.</p>
+      <a href="mailto:jayantiassociates@gmail.com" class="btn btn-dark">
+Request A Call Back
+</a>
+    </div>
+    <div class="cta-info-card">
+      <div class="row">
+        <div class="ic">&#9742;</div>
+        <div>
+
+<strong>Call Us</strong>
+
+<span>+91 88376 78165</span>
+
+</div>
+      </div>
+      <div class="row">
+    <div class="ic">&#9993;</div>
+    <div>
+        <strong>Email Us</strong>
+        <span>jayantiassociates@gmail.com</span>
+    </div>
+</div>
+      <div class="row">
+        <div class="ic">&#8962;</div>
+<div>
+<strong>Visit Us</strong>
+
+<span>
+#95 Near Motia Harmony II<br>
+Kharar, Mohali<br>
+Punjab, India
+</span>
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="location" class="reveal">
+
+<div class="container">
+
+<div class="sec-head">
+
+<div class="sec-eyebrow">
+<div class="dash"></div>
+<span>Location</span>
+</div>
+
+<h2>Visit Our Studio</h2>
+
+<p>
+Meet us at our studio to discuss your dream project and explore innovative architectural solutions.
+</p>
+
+</div>
+
+<div class="map-container">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d214.32769633896783!2d76.66561724602546!3d30.739671089051807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1782154129781!5m2!1sen!2sin"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="final-cta reveal">
+
+<div class="container">
+
+<h2>
+Ready To Build Your Dream Space?
+</h2>
+
+<p>
+From concept to completion, Jayanti Associates delivers architecture and interior solutions tailored to your vision.
+</p>
+
+<div class="hero-btns">
+
+<a href="tel:+918837678165" class="btn btn-dark">
+Call Now
+</a>
+
+<a href="https://wa.me/918837678165" class="btn btn-outline">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="footer-logo">
+        <div class="logo-mark">JA</div>
+        <div class="name">Jayanti Associates</div>
+      </div>
+      <p>Jayanti Associates was founded by Ar. Chitwan Bamotra & Ar. Srishti Bamotra to create exceptional, unparalleled interior designs inspired by a heartfelt passion for elegant, bespoke interiors designed to perfection.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/p/DZyMntHk6Ta/?img_index=1&igsh=cTRoZWtsaTM2cnVy" target="_blank">IG</a><a href="#">FB</a><a href="#">IN</a><a href="#">WA</a>
+      </div>
+    </div>
+    <div>
+  <h5>Quick Links</h5>
+
+  <ul class="footer-links">
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#about">About Us</a></li>
+
+    <li><a href="#founders">Founders</a></li>
+
+    <li><a href="#services">Services</a></li>
+
+    <li><a href="#projects">Projects</a></li>
+
+    <li><a href="#contact">Contact Us</a></li>
+
+  </ul>
+</div>
+<div>
+      <h5>Explore</h5>
+      <ul class="footer-links">
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#projects">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul class="footer-contact">
+        <li><b>Address:</b><span>
+#95 Near Motia Harmony II
+Kharar, Mohali
+Punjab, India</span></li>
+      <li>
+    <b>Email:</b>
+    <span>jayantiassociates@gmail.com</span>
+</li>
+        <li><b>Phone:</b><span>
++91 88376 78165</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>Copyright &copy; 2026 Jayanti Associates. All Rights Reserved.</span>
+    <span>Designed &amp; Developed with care</span>
+  </div>
+  <!-- PROJECT LIGHTBOX -->
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Project Image">
+
+</div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  document.querySelectorAll('.projects-tabs button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.projects-tabs button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  function animateValue(id, start, end, duration, suffix = "") {
+
+let obj = document.getElementById(id);
+
+let range = end - start;
+
+let current = start;
+
+let increment = end > start ? 1 : -1;
+
+let stepTime = Math.abs(Math.floor(duration / range));
+
+let timer = setInterval(() => {
+
+current += increment;
+
+obj.textContent = current + suffix;
+
+if (current == end) {
+
+clearInterval(timer);
+
+}
+
+}, stepTime);
+
+}
+
+window.addEventListener("load", () => {
+
+animateValue("years",0,15,1500,"+");
+
+animateValue("projects",0,350,2000,"+");
+
+animateValue("team",0,40,1800,"+");
+
+animateValue("satisfaction",0,98,2000,"%");
+
+});
+</script>
+<a href="https://wa.me/918837678165"
+class="whatsapp-float"
+target="_blank">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="30"
+height="30"
+fill="currentColor"
+viewBox="0 0 16 16">
+
+<path d="M13.601 2.326A7.854 7.854 0 0 0 8.016 0C3.648 0 .093 3.555.093 7.923c0 1.395.365 2.758 1.058 3.958L0 16l4.223-1.108a7.92 7.92 0 0 0 3.793.965h.003c4.368 0 7.923-3.555 7.923-7.923a7.87 7.87 0 0 0-2.341-5.608z"/>
+
+</svg>
+
+</a>
+<script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+reveals.forEach(section => {
+
+const windowHeight = window.innerHeight;
+const elementTop = section.getBoundingClientRect().top;
+
+if(elementTop < windowHeight - 100){
+section.classList.add("active");
+}
+
+});
+
+});
+
+window.dispatchEvent(new Event("scroll"));
+// ===============================
+// PROJECT LIGHTBOX
+// ===============================
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const projectImages = document.querySelectorAll(".project-popup");
+const closeBtn = document.querySelector(".close-lightbox");
+
+projectImages.forEach(project => {
+
+    project.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        lightbox.classList.add("active");
+
+        lightboxImg.src = this.href;
+
+    });
+
+});
+
+closeBtn.addEventListener("click", ()=>{
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+    if(e.target===lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key==="Escape"){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+</script>
+</body>
+</html>
